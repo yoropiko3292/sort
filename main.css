@@ -1,0 +1,51 @@
+body{background-color: #eeeeff;}
+canvas{background-color: white;width: 70vw;height: 30vmax;border:solid 3px #7db4e6;}
+textarea{display: block; width: 70vw;margin: 15px;font-size: larger;border:solid 3px #7db4e6;}
+input{margin: 15px;font-size: larger;}
+p{
+    font-size: larger;
+    border-bottom: solid 2px #8de5f7;
+}
+h1{
+    font-size: xx-large;
+    padding: 0.4em 0.5em;
+    width: 100%;
+    color: #494949;
+    background: #f4f4f4;
+    border-left: solid 10px #7db4e6;
+    border-bottom: solid 5px #d7d7d7;
+}
+h2{
+    font-size: x-large;
+    padding: 0.4em 0.5em;
+    color: #494949;
+    background: #f4f4f4;
+    border-left: solid 10px #7db4e6;
+    border-bottom: solid 5px #d7d7d7;
+    width: 80vw;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer; /* カーソルを分かりやすく */
+    outline: none; /* スライダーのアウトラインは見た目がキツイので消す */
+    height: 14px;
+    width: 140px;
+    background: #7db4e6; /* バーの背景色 */
+    border-radius: 10px; /* バーの両端の丸み */
+  }
+input{
+    border: solid 3px #7db4e6;
+}
+
+select{
+    border: solid 3px #7db4e6;
+    font-size: larger;
+  }
+
+  footer{
+    border-top: solid 3px #7db4e6;
+    font-size: large;
+    height: 50px;
+    text-align: center;
+  }

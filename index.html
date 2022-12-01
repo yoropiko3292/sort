@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ソートアルゴリズムの可視化</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>ソートアルゴリズムの可視化(制作中)</h1>
+        <article>
+            <p>ソートアルゴリズムは、データ(数値など)を昇順、降順などに並び替えるための処理方法(アルゴリズム)です。</p>
+            <p>バブルソート、シェーカーソートが実装済み、クイックソート、マージソート、選択ソートなどが実装予定です。</p>
+            <p>詳しく知りたい方は自分で調べて下さい。</p>
+        </article>
+        <h2>データ生成</h2>
+        <form id="form">
+            <p>データの個数<input type="number" value="50" id="detaValue" step="1" min="2" max="500"/>(最小2,最大500)</p>
+            <p>データの最小値<input type="number" value="-100" id="detaMin" step="1"/>(整数のみ)</p>
+            <p>データの最大値<input type="number" value="100" id="detaMax" step="1"/>(整数のみ)</p>
+            <p>速さ(数字が大きいほど遅い)<input id="speed" type="range" min="0" max="100" step="1" value="10"/><span id="speedMeter">10</span></p>
+            <input type="button" value="ランダム生成" id="random"/>
+            <h2>データ入力</h2>
+            <p>データの入力は半角数字で、数字の間には記号を入れて下さい。(記号ならなんでもOK)</p>
+            <textarea id="preDeta" rows="5"></textarea>
+            <select>
+                <option value="bubble">バブルソート </option>
+                <option value="shaker">シェーカーソート</option>
+            </select>
+            <input id="start" type="button" value="スタート"/>
+            <input id="stop" type="button" value="ストップ" disabled/>
+        </form>
+        <canvas width="1000" height="1000"></canvas>
+        <h2>結果</h2>
+        <textarea id="result" rows="5"></textarea>
+        <footer>
+            ©2022 yp3292 Some Rights Reserved
+        </footer>
+        <script src="main.js">
+        </script>
+    </body>
+</html>
